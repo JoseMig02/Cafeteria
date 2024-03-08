@@ -34,6 +34,10 @@ public class ControlPanel extends javax.swing.JFrame {
         btnCafeterias = new javax.swing.JButton();
         btnCampus = new javax.swing.JButton();
         btnProveedores = new javax.swing.JButton();
+        btnProveedores1 = new javax.swing.JButton();
+        btnProveedores2 = new javax.swing.JButton();
+        btnProveedores3 = new javax.swing.JButton();
+        btnProveedores4 = new javax.swing.JButton();
         pnContenedor = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -69,6 +73,34 @@ public class ControlPanel extends javax.swing.JFrame {
             }
         });
 
+        btnProveedores1.setText("Marcas");
+        btnProveedores1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnProveedores1ActionPerformed(evt);
+            }
+        });
+
+        btnProveedores2.setText("Usuarios");
+        btnProveedores2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnProveedores2ActionPerformed(evt);
+            }
+        });
+
+        btnProveedores3.setText("Articulos");
+        btnProveedores3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnProveedores3ActionPerformed(evt);
+            }
+        });
+
+        btnProveedores4.setText("Empleados");
+        btnProveedores4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnProveedores4ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -83,7 +115,11 @@ public class ControlPanel extends javax.swing.JFrame {
                     .addComponent(btnUsuariosTipos, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(btnCafeterias, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(btnCampus, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btnProveedores, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(btnProveedores, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnProveedores1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnProveedores2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnProveedores3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnProveedores4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
@@ -99,7 +135,15 @@ public class ControlPanel extends javax.swing.JFrame {
                 .addComponent(btnCampus, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(btnProveedores, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(250, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnProveedores1, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnProveedores2, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnProveedores3, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnProveedores4, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(94, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout pnContenedorLayout = new javax.swing.GroupLayout(pnContenedor);
@@ -177,6 +221,52 @@ public class ControlPanel extends javax.swing.JFrame {
 
     }//GEN-LAST:event_btnProveedoresActionPerformed
 
+    private void btnProveedores1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnProveedores1ActionPerformed
+        // TODO add your handling code here:
+        pnContenedor.removeAll();
+        
+        Marcas frm = new Marcas();
+        pnContenedor.add(frm.getContentPane());
+
+        pnContenedor.revalidate();
+        pnContenedor.repaint();
+
+    }//GEN-LAST:event_btnProveedores1ActionPerformed
+
+    private void btnProveedores2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnProveedores2ActionPerformed
+        // TODO add your handling code here:
+        pnContenedor.removeAll();
+        
+        Usuarios frm = new Usuarios();
+        pnContenedor.add(frm.getContentPane());
+
+        pnContenedor.revalidate();
+        pnContenedor.repaint();
+
+    }//GEN-LAST:event_btnProveedores2ActionPerformed
+
+    private void btnProveedores3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnProveedores3ActionPerformed
+        // TODO add your handling code here:
+        pnContenedor.removeAll();
+        
+        Articulos frm = new Articulos();
+        pnContenedor.add(frm.getContentPane());
+
+        pnContenedor.revalidate();
+        pnContenedor.repaint();
+    }//GEN-LAST:event_btnProveedores3ActionPerformed
+
+    private void btnProveedores4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnProveedores4ActionPerformed
+        // TODO add your handling code here:
+        pnContenedor.removeAll();
+        
+        Empleados frm = new Empleados();
+        pnContenedor.add(frm.getContentPane());
+
+        pnContenedor.revalidate();
+        pnContenedor.repaint();
+    }//GEN-LAST:event_btnProveedores4ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -185,6 +275,10 @@ public class ControlPanel extends javax.swing.JFrame {
     private javax.swing.JButton btnCafeterias;
     private javax.swing.JButton btnCampus;
     private javax.swing.JButton btnProveedores;
+    private javax.swing.JButton btnProveedores1;
+    private javax.swing.JButton btnProveedores2;
+    private javax.swing.JButton btnProveedores3;
+    private javax.swing.JButton btnProveedores4;
     private javax.swing.JButton btnUsuariosTipos;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
